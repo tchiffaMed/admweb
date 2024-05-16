@@ -17,10 +17,10 @@
 <body>
 <!--Navbar-->
   <section>
-       <div class="h-20 bg-gradient-to-r from-blue-600 to-indigo-900 flex justify-between items-center px-20">
-        <div class="flex items-center space-x-8">
-          <div class="text-white font-semibold text-xl"> <img class="w-20" src="./logo/adm.png" alt="" srcset=""></div>
-          <nav class="space-x-4 text-white font-medium text-sm">
+       <div class="h-20 bg-gradient-to-r from-blue-600 to-indigo-900 flex justify-between items-center md:px-20 px-4">
+        <div class="flex items-center md:space-x-8">
+          <div class="text-white font-semibold text-xl"> <img class="md:w-20 w-14" src="./logo/adm.png" alt="" srcset=""></div>
+          <nav class="md:space-x-4 space-x-1 text-white font-medium md:text-sm text-xs">
             <a href="#" class="hover:underline">Accueil</a>
             <a href="#" class="hover:underline">À Propos</a>
             <a href="#" class="hover:underline">Produits</a>
@@ -35,9 +35,9 @@
 
 <!--Grand Slider -->
   <div class="relative overflow-hidden text-white bg-gradient-to-tr from-[#0F172A] from-60% via-[#11182C] via-74% via-[#1D2B50] via-79% to-[#1B3555] to-[100%]">
-    <div  class="container mx-auto px-20 py-8">  
-      <h1 class="text-6xl font-bold mb-8"># INNOVATION - NUMERIQUE</h1>
-      <p class="text-lg mb-12">Welcome! Nos réalisations sont remarquables.Nous avons developpé des applications qui transforment de metiers, des plateformes qui connectent des communautés à travers le pays</p>
+    <div  class="container mx-auto md:px-20 px-5 py-8">  
+      <h1 class="md:text-6xl text-6xl mb-8"># INNOVATION NUMERIQUE</h1>
+      <p class="text-lg mb-12 font-light">Welcome! Nos réalisations sont remarquables.Nous avons developpé des applications qui transforment de metiers, des plateformes qui connectent des communautés à travers le pays</p>
       <a href="#" class="bg-blue-500 text-white py-3 px-6 rounded-lg text-lg font-medium hover:bg-blue-600 transition duration-300">Découvrir ADM</a>
       <div class="text-center mt-32"> <a href="#"><i class="bi bi-arrow-down-circle text-4xl "></i></a>
     </div>
@@ -46,51 +46,51 @@
   </div>
 
 <!--Nos services en miniature -->
-  <section class="bg-gray-100 py-32" id="tsparticles">
-    <div class="container mx-auto px-4">
-      <div class="flex justify-center items-center space-x-8">
-        <div class="text-center">
+  <section class="bg-gray-100 py-16 md:py-32">
+    <div class="container mx-auto md:px-4 px-1">
+      <div class="flex justify-center items-center md:space-x-8">
+        <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-4 mb-2">
             <i class="bi bi-mortarboard-fill text-4xl"></i> </div>
-          <p class="text-sm text-gray-500">   
+          <p class="text-xs md:text-sm text-gray-500">   
         Training
           </p>
         </div>
-        <div class="text-center">
+        <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-4 mb-2">
             <i class="bi bi-browser-chrome text-4xl"></i>
           </div>
-          <p class="text-sm text-gray-500">  
+          <p class="text-xs md:text-sm text-gray-500">  
             Web 
           </p>
         </div>
-        <div class="text-center">
+        <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-4 mb-2">
             <i class="bi bi-android2 text-4xl"></i>
           </div>
-          <p class="text-sm text-gray-500">Mobile
+          <p class="text-xs md:text-sm text-gray-500">Mobile
           </p>
         </div>
-        <div class="text-center">
+        <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-4 mb-2">
             <i class="bi bi-pc-display text-4xl"></i>
           </div>
-          <p class="text-sm text-gray-500">Desktop
+          <p class="text-xs md:text-sm text-gray-500">Desktop
           </p>
         </div>
-        <div class="text-center">
+        <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-4 mb-2">
             <i class="bi bi-kanban text-4xl"></i>
           </div>
-          <p class="text-sm text-gray-500">   
+          <p class="text-xs md:text-sm text-gray-500">   
 Projects
           </p>
         </div>
-        <div class="text-center">
+        <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-4 mb-2">
             <i class="bi bi-feather text-4xl"></i>
           </div>
-          <p class="text-sm text-gray-500">   
+          <p class="text-xs md:text-sm text-gray-500">   
 Agro-Tech
           </p>
         </div>
@@ -100,50 +100,63 @@ Agro-Tech
 
 <!--Call to action -->
 
-  <section class="flex flex-col justify-center items-center py-32 mx-auto text-center  ">
-    <video src="./logo/Vid.mp4" autoplay loop class="object-cover" style="z-index: -1; position: absolute;">
+  <section class="flex flex-col justify-center items-center md:py-32 mx-auto text-center  ">
+    <video src="./logo/Vid.mp4" autoplay loop class="md:object-cover h-[150%]" style="z-index: -1; position: absolute;">
     </video>
-    <img src="./logo/adm.png" class="w-72">      
-    <h2 class="text-4xl font-light text-white mb-4">Chez ADM, nous inspirons les générations futures <br> à repousser les limites et à rêver en grand</h2>
-          <h3 class="text-xl font-semibold  text-white mb-4">...que nos impacts continuent de résonner bien au-delà de nos frontières, inspirant les générations futures <br> à repousser les limites et à rêver en grand </h3>
-          <button class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition duration-300">voir plus</button>
+    <img src="./logo/adm.png" class="md:w-72 w-16 mt-5">      
+    <h2 class="md:text-4xl font-light text-xs text-white md:mb-4">Chez ADM, nous inspirons les générations futures <br> à repousser les limites et à rêver en grand</h2>
+          <h3 class="md:text-xl text-xs font-semibold  text-white mb-4">...que nos impacts continuent de résonner bien au-delà de nos frontières, inspirant les générations futures <br> à repousser les limites et à rêver en grand </h3>
+          <button class="hidden sm:block px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition duration-300">voir plus</button>
         </div> 
   </section>
 
 <!--Nos Produits -->
-  <section class="py-32 bg-gradient-to-tr
+  <section class="py-20 md:py-32 bg-gradient-to-tr
   from-[#E6DAF0]   to-[#D2DEEC]  ">
-    <div class="container mx-auto px-4">
-      <div class="flex justify-center items-center space-x-8">
-        <div class="text-center">
-          <div class="bg-white rounded-full  mb-2">
-             <img src="./logo/indi.png" class="w-24 mx-auto " alt="" srcset="">          
+    <div class="container px-4">
+      <div class="flex items-center space-x-2 md:space-x-8 ">
+        
+        <div class="text-center w-1/5  ">
+          <div class="bg-white rounded-full p-1.5 mb-2 md:w-fit">
+             <img src="./logo/indi.png" class="mx-auto hidden md:block md:w-24" alt="" srcset="">          
+             <img src="./logo/indiHorizon.png" class="mx-auto  md:hidden" alt="" srcset="">          
             </div>
-          <p class="text-sm text-gray-500">   
-        Low-code front/back-end
+          <p class="text-xs md:text-sm text-gray-500">   
+        Low-code
           </p>
         </div>
-        <div class="text-center">
-          <div class="bg-white rounded-full p-4 mb-2">
-            <img src="./logo/sabtu.png" class="w-52" alt="" srcset="">          
+
+        <div class="text-center w-1/5">
+          <div class="bg-white rounded-full p-2 mb-2">
+            <img src="./logo/prof+.png" class="  md:w-52" alt="" srcset="">          
            </div>
-          <p class="text-sm text-gray-500">  
+          <p class="text-xs md:text-sm text-gray-500">  
+             Education
+          </p>
+        </div>
+
+        <div class="text-center w-1/5">
+          <div class="bg-white rounded-full p-2 mb-2">
+            <img src="./logo/sabtu.png" class="  md:w-52" alt="" srcset="">          
+           </div>
+          <p class="text-xs md:text-sm text-gray-500">  
              Finance
           </p>
         </div>
-        <div class="text-center">
-          <div class="bg-white rounded-full p-4 mb-2">
-            <img src="./logo/qra.png" class="w-40" alt="" srcset="">           
+        <div class="text-center w-1/5">
+          <div class="bg-white rounded-full p-2 mb-2">
+            <img src="./logo/qra.png" class="  md:w-40" alt="" srcset="">           
           </div>
-          <p class="text-sm text-gray-500">   
+          <p class="text-xs md:text-sm text-gray-500">   
             Education
               </p>
           </div>
-          <div class="text-center">
-            <div class="bg-white w-fit rounded-full p-4 mb-2">
-              <img src="./logo/shago.png" class="w-52 h-16" alt="" srcset="">  
+          <div class="text-center w-1/5">
+            <div class="bg-white w-fit rounded-full p-2 mb-2">
+              <img src="./logo/shago.png" class="  md:w-52 md:h-16" alt="" srcset="">  
             </div>
-            <p class="text-sm text-gray-500">E-commerce </p>        
+            <p class="text-xs md:text-sm text-gray-500 hidden md:block">E-commerce </p>        
+            <p class="text-xs md:text-sm text-gray-500 md:hidden">E-comms</p>        
             </div>
         </div>
         </div>
@@ -151,9 +164,9 @@ Agro-Tech
 
 
 <!-- Qui somme Nous? -->
-<section class="flex flex-col md:flex-row justify-center  h-auto py-48 gap-6 px-12">
+<section class="bg-[#f4f6fa] flex flex-col md:flex-row justify-center  h-auto py-48 gap-6 px-12">
   
-  <div class="max-w-xs md:w-1/5  mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+  <div class="max-w-xs md:w-1/5  mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/leadership.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Workshop Jeunes et Leadership</h2>
@@ -166,7 +179,7 @@ Agro-Tech
   </div>
   </div>
 
-  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/INDI.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Solution numérique revolutionnaire</h2>
@@ -180,7 +193,7 @@ Agro-Tech
   </div>
 
 
-  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/mdf.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Inclusion numérique en milieu rural</h2>
@@ -194,7 +207,7 @@ Agro-Tech
   </div>
 
 
-  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/kkh.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Experience Agro-Tech</h2>
@@ -207,7 +220,7 @@ Agro-Tech
   </div>
   </div>
 
-  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/ticv.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Education numerique en milieu rural </h2>
@@ -230,7 +243,7 @@ Agro-Tech
       <p class="font-light mb-8 text-center">Chaque membre de cette équipe est un innovateur dans l'âme, <br> un créateur de solutions brillantes pour les défis les plus complexes de notre époque.</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- # 1 -->
-        <div class="flex flex-col items-center bg-white rounded-lg shadow-lg">
+        <div class="flex flex-col items-center bg-white rounded-lg shadow-xs border border-gray-300">
           <img src="./logo/collab.png" alt="# 1" class="w-full h-64 object-cover rounded-t-lg">
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-2"># 1</h3>
@@ -238,7 +251,7 @@ Agro-Tech
           </div>
         </div>
         <!-- # 2 -->
-        <div class="flex flex-col items-center bg-white rounded-lg shadow-lg">
+        <div class="flex flex-col items-center bg-white rounded-lg shadow-xs border border-gray-300">
           <img src="./logo/collab.png" alt="# 2" class="w-full h-64 object-cover rounded-t-lg">
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-2"># 2</h3>
@@ -246,7 +259,7 @@ Agro-Tech
           </div>
         </div>
         <!-- # 3 -->
-        <div class="flex flex-col items-center bg-white rounded-lg shadow-lg">
+        <div class="flex flex-col items-center bg-white rounded-lg shadow-xs border border-gray-300">
           <img src="./logo/collab.png" alt="# 3" class="w-full h-64 object-cover rounded-t-lg">
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-2"># 3</h3>
@@ -254,7 +267,7 @@ Agro-Tech
           </div>
         </div>
         <!-- # 4 -->
-        <div class="flex flex-col items-center bg-white rounded-lg shadow-lg">
+        <div class="flex flex-col items-center bg-white rounded-lg shadow-xs border border-gray-300">
           <img src="./logo/collab.png" alt="# 4" class="w-full h-64 object-cover rounded-t-lg">
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-2"># 4</h3>
