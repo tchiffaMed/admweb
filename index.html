@@ -11,8 +11,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <style>
-
-</style>
+     @keyframes neon {
+      0%, 100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0f0, 0 0 70px #0f0, 0 0 80px #0f0, 0 0 100px #0f0, 0 0 150px #0f0;
+      }
+      50% {
+        text-shadow: none;
+      }
+    }
+ </style>
 </head>
 <body>
 <!--Navbar-->
@@ -36,7 +43,7 @@
 <!--Grand Slider -->
   <div class="relative overflow-hidden text-white bg-gradient-to-tr from-[#0F172A] from-60% via-[#11182C] via-74% via-[#1D2B50] via-79% to-[#1B3555] to-[100%]">
     <div  class="container mx-auto md:px-20 px-5 py-8">  
-      <h1 class="md:text-6xl text-6xl mb-8"># INNOVATION NUMERIQUE</h1>
+      <h1 class="md:text-6xl text-3xl mb-8 tracking-wide animate-neon"># INNOVATION NUMERIQUE</h1>
       <p class="text-lg mb-12 font-light">Welcome! Nos réalisations sont remarquables.Nous avons developpé des applications qui transforment de metiers, des plateformes qui connectent des communautés à travers le pays</p>
       <a href="#" class="bg-blue-500 text-white py-3 px-6 rounded-lg text-lg font-medium hover:bg-blue-600 transition duration-300">Découvrir ADM</a>
       <div class="text-center mt-32"> <a href="#"><i class="bi bi-arrow-down-circle text-4xl "></i></a>
@@ -46,49 +53,50 @@
   </div>
 
 <!--Nos services en miniature -->
-  <section class="bg-gray-100 py-16 md:py-32">
+  <section class="bg-gradient-to-tr
+  from-[#E6DAF0] to-[#D2DEEC] py-16 md:py-32 md:px-12 px-6">
     <div class="container mx-auto md:px-4 px-1">
-      <div class="flex justify-center items-center md:space-x-8">
+      <div class="flex justify-center items-center md:space-x-8 space-x-2">
         <div class="text-center w-1/6">
-          <div class="bg-white rounded-full p-4 mb-2">
-            <i class="bi bi-mortarboard-fill text-4xl"></i> </div>
+          <div class="bg-white rounded-full p-1 md:p-4 mb-2">
+            <i class="bi bi-mortarboard-fill text-xs md:text-4xl"></i> </div>
           <p class="text-xs md:text-sm text-gray-500">   
         Training
           </p>
         </div>
         <div class="text-center w-1/6">
-          <div class="bg-white rounded-full p-4 mb-2">
-            <i class="bi bi-browser-chrome text-4xl"></i>
+          <div class="bg-white rounded-full p-1 md:p-4 mb-2">
+            <i class="bi bi-browser-chrome text-xs md:text-4xl"></i>
           </div>
           <p class="text-xs md:text-sm text-gray-500">  
             Web 
           </p>
         </div>
         <div class="text-center w-1/6">
-          <div class="bg-white rounded-full p-4 mb-2">
-            <i class="bi bi-android2 text-4xl"></i>
+          <div class="bg-white rounded-full p-1 md:p-4 mb-2">
+            <i class="bi bi-android2 text-xs md:text-4xl"></i>
           </div>
           <p class="text-xs md:text-sm text-gray-500">Mobile
           </p>
         </div>
         <div class="text-center w-1/6">
-          <div class="bg-white rounded-full p-4 mb-2">
-            <i class="bi bi-pc-display text-4xl"></i>
+          <div class="bg-white rounded-full p-1 md:p-4 mb-2">
+            <i class="bi bi-pc-display text-xs md:text-4xl"></i>
           </div>
           <p class="text-xs md:text-sm text-gray-500">Desktop
           </p>
         </div>
         <div class="text-center w-1/6">
-          <div class="bg-white rounded-full p-4 mb-2">
-            <i class="bi bi-kanban text-4xl"></i>
+          <div class="bg-white rounded-full p-1 md:p-4 mb-2">
+            <i class="bi bi-kanban text-xs md:text-4xl"></i>
           </div>
           <p class="text-xs md:text-sm text-gray-500">   
 Projects
           </p>
         </div>
         <div class="text-center w-1/6">
-          <div class="bg-white rounded-full p-4 mb-2">
-            <i class="bi bi-feather text-4xl"></i>
+          <div class="bg-white rounded-full p-1 md:p-4 mb-2">
+            <i class="bi bi-feather text-xs md:text-4xl"></i>
           </div>
           <p class="text-xs md:text-sm text-gray-500">   
 Agro-Tech
@@ -112,13 +120,14 @@ Agro-Tech
 
 <!--Nos Produits -->
   <section class="py-20 md:py-32 bg-gradient-to-tr
-  from-[#E6DAF0]   to-[#D2DEEC]  ">
-    <div class="container px-4">
-      <div class="flex items-center space-x-2 md:space-x-8 ">
+  from-[#E6DAF0] to-[#D2DEEC] items-center">
+    <div class="container px-4 mx-auto ">
+
+      <div class="flex justify-center items-center space-x-2 md:space-x-8 h-24">
         
-        <div class="text-center w-1/5  ">
-          <div class="bg-white rounded-full p-1.5 mb-2 md:w-fit">
-             <img src="./logo/indi.png" class="mx-auto hidden md:block md:w-24" alt="" srcset="">          
+        <div class="text-center w-1/5 ">
+          <div class="bg-white rounded-full p-1.5 mb-2">
+             <img src="./logo/indiHorizon.png" class="mx-auto hidden md:block md:w-40 " alt="" srcset="">          
              <img src="./logo/indiHorizon.png" class="mx-auto  md:hidden" alt="" srcset="">          
             </div>
           <p class="text-xs md:text-sm text-gray-500">   
@@ -128,7 +137,7 @@ Agro-Tech
 
         <div class="text-center w-1/5">
           <div class="bg-white rounded-full p-2 mb-2">
-            <img src="./logo/prof+.png" class="  md:w-52" alt="" srcset="">          
+            <img src="./logo/prof+.png" class="mx-auto  md:w-52" alt="" srcset="">          
            </div>
           <p class="text-xs md:text-sm text-gray-500">  
              Education
@@ -137,7 +146,7 @@ Agro-Tech
 
         <div class="text-center w-1/5">
           <div class="bg-white rounded-full p-2 mb-2">
-            <img src="./logo/sabtu.png" class="  md:w-52" alt="" srcset="">          
+            <img src="./logo/sabtu.png" class="mx-auto md:w-52" alt="" srcset="">          
            </div>
           <p class="text-xs md:text-sm text-gray-500">  
              Finance
@@ -145,7 +154,7 @@ Agro-Tech
         </div>
         <div class="text-center w-1/5">
           <div class="bg-white rounded-full p-2 mb-2">
-            <img src="./logo/qra.png" class="  md:w-40" alt="" srcset="">           
+            <img src="./logo/qra.png" class="mx-auto md:w-40" alt="" srcset="">           
           </div>
           <p class="text-xs md:text-sm text-gray-500">   
             Education
@@ -153,9 +162,9 @@ Agro-Tech
           </div>
           <div class="text-center w-1/5">
             <div class="bg-white w-fit rounded-full p-2 mb-2">
-              <img src="./logo/shago.png" class="  md:w-52 md:h-16" alt="" srcset="">  
+              <img src="./logo/shago.png" class="mx-auto md:w-52 md:h-16" alt="" srcset="">  
             </div>
-            <p class="text-xs md:text-sm text-gray-500 hidden md:block">E-commerce </p>        
+            <p class="text-xs md:text-sm text-gray-500 hidden md:block">E-commerce</p>        
             <p class="text-xs md:text-sm text-gray-500 md:hidden">E-comms</p>        
             </div>
         </div>
@@ -164,9 +173,9 @@ Agro-Tech
 
 
 <!-- Qui somme Nous? -->
-<section class="bg-[#f4f6fa] flex flex-col md:flex-row justify-center  h-auto py-48 gap-6 px-12">
+<section class="bg-[#f4f6fa] flex flex-wrap md:flex-row justify-center h-auto py-48 gap-6 px-12">
   
-  <div class="max-w-xs md:w-1/5  mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
+  <div class="md:w-1/2 md:mb-8 max-w-xs lg:w-1/5  mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/leadership.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Workshop Jeunes et Leadership</h2>
@@ -179,7 +188,7 @@ Agro-Tech
   </div>
   </div>
 
-  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
+  <div class="md:w-1/2 md:mb-8 max-w-xs lg:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/INDI.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Solution numérique revolutionnaire</h2>
@@ -193,7 +202,7 @@ Agro-Tech
   </div>
 
 
-  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
+  <div class="md:w-1/2 md:mb-8 max-w-xs lg:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/mdf.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Inclusion numérique en milieu rural</h2>
@@ -207,7 +216,7 @@ Agro-Tech
   </div>
 
 
-  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
+  <div class="md:w-1/2 md:mb-8 max-w-xs lg:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/kkh.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Experience Agro-Tech</h2>
@@ -220,7 +229,7 @@ Agro-Tech
   </div>
   </div>
 
-  <div class="max-w-xs md:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
+  <div class="md:w-1/2 md:mb-8 max-w-xs lg:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/ticv.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Education numerique en milieu rural </h2>
@@ -237,7 +246,7 @@ Agro-Tech
 
 
 <!--  Col-laborator -->
-  <section class="bg-gray-100 py-16 px-20">
+  <section class="bg-gray-100 py-16 md:px-20 px-8">
     <div class="container mx-auto">
       <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Nos collaborateurs</h2>
       <p class="font-light mb-8 text-center">Chaque membre de cette équipe est un innovateur dans l'âme, <br> un créateur de solutions brillantes pour les défis les plus complexes de notre époque.</p>
@@ -281,7 +290,7 @@ Agro-Tech
 
 <!-- Nos partenaires  -->
   <i class="bi bi-patch-check"></i>
-  <section class="bg-white py-20">
+  <section class="bg-white py-20 px-8">
     <div class="container mx-auto">
       <h2 class="text-3xl font-medium text-gray-800 text-center mb-12">Nos Partenaires</h2>
       <div class="grid grid-cols-2 md:grid-cols-6 gap-6">
