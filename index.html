@@ -11,14 +11,53 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <style>
-     @keyframes neon {
-      0%, 100% {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0f0, 0 0 70px #0f0, 0 0 80px #0f0, 0 0 100px #0f0, 0 0 150px #0f0;
+     @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: rgba(255, 255, 255, 0.032) }
+        }
+        .typing {
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: .15em solid black;
+            animation: typing 3.5s steps(40, end), blink .75s step-end infinite;
+        }
+
+        .gradient-background {
+    background: linear-gradient(270deg,  #000000,#ffffff,  #000016);
+    background-size: 600% 600%;
+    animation: gradient-animation 4s ease infinite;
+}
+
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+}
+
+
+
+    .gradient-text {
+      background: linear-gradient(270deg, #0e0045, #0176ec, #ff67f0);
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;           
+      animation: gradient 4s ease infinite;
+    }@keyframes gradient {
+      0% {
+        background-position: 0% 50%;
       }
       50% {
-        text-shadow: none;
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
       }
     }
+
  </style>
 </head>
 <body>
@@ -43,30 +82,29 @@
 <!--Grand Slider -->
   <div class="relative overflow-hidden text-white bg-gradient-to-tr from-[#0F172A] from-60% via-[#11182C] via-74% via-[#1D2B50] via-79% to-[#1B3555] to-[100%]">
     <div  class="container mx-auto md:px-20 px-5 py-8">  
-      <h1 class="md:text-6xl text-3xl mb-8 tracking-wide animate-neon"># INNOVATION NUMERIQUE</h1>
+      <h1 class="md:text-6xl md:font-bold w-fit text-3xl mb-8 tracking-wide typing "># INNOVATION <br> NUMERIQUE</h1>
       <p class="text-lg mb-12 font-light">Welcome! Nos réalisations sont remarquables.Nous avons developpé des applications qui transforment de metiers, des plateformes qui connectent des communautés à travers le pays</p>
       <a href="#" class="bg-blue-500 text-white py-3 px-6 rounded-lg text-lg font-medium hover:bg-blue-600 transition duration-300">Découvrir ADM</a>
-      <div class="text-center mt-32"> <a href="#"><i class="bi bi-arrow-down-circle text-4xl "></i></a>
+      <div class="text-center md:mt-16 mt-32"> <a href="#"><i class="bi bi-arrow-down-circle text-4xl "></i></a>
     </div>
 </div>
 
   </div>
 
 <!--Nos services en miniature -->
-  <section class="bg-gradient-to-tr
-  from-[#E6DAF0] to-[#D2DEEC] py-16 md:py-32 md:px-12 px-6">
+  <section class=" py-16 md:py-32 md:px-12 px-6 gradient-background ">
     <div class="container mx-auto md:px-4 px-1">
       <div class="flex justify-center items-center md:space-x-8 space-x-2">
         <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-1 md:p-4 mb-2">
-            <i class="bi bi-mortarboard-fill text-xs md:text-4xl"></i> </div>
+            <i class="gradient-text bi bi-mortarboard-fill text-xs md:text-4xl"></i> </div>
           <p class="text-xs md:text-sm text-gray-500">   
         Training
           </p>
         </div>
         <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-1 md:p-4 mb-2">
-            <i class="bi bi-browser-chrome text-xs md:text-4xl"></i>
+            <i class="gradient-text  bi bi-browser-chrome text-xs md:text-4xl"></i>
           </div>
           <p class="text-xs md:text-sm text-gray-500">  
             Web 
@@ -74,21 +112,21 @@
         </div>
         <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-1 md:p-4 mb-2">
-            <i class="bi bi-android2 text-xs md:text-4xl"></i>
+            <i class="gradient-text  bi bi-android2 text-xs md:text-4xl"></i>
           </div>
           <p class="text-xs md:text-sm text-gray-500">Mobile
           </p>
         </div>
         <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-1 md:p-4 mb-2">
-            <i class="bi bi-pc-display text-xs md:text-4xl"></i>
+            <i class="gradient-text  bi bi-pc-display text-xs md:text-4xl"></i>
           </div>
           <p class="text-xs md:text-sm text-gray-500">Desktop
           </p>
         </div>
         <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-1 md:p-4 mb-2">
-            <i class="bi bi-kanban text-xs md:text-4xl"></i>
+            <i class="gradient-text  bi bi-kanban text-xs md:text-4xl"></i>
           </div>
           <p class="text-xs md:text-sm text-gray-500">   
 Projects
@@ -96,7 +134,7 @@ Projects
         </div>
         <div class="text-center w-1/6">
           <div class="bg-white rounded-full p-1 md:p-4 mb-2">
-            <i class="bi bi-feather text-xs md:text-4xl"></i>
+            <i class="gradient-text  bi bi-feather text-xs md:text-4xl"></i>
           </div>
           <p class="text-xs md:text-sm text-gray-500">   
 Agro-Tech
@@ -172,75 +210,91 @@ Agro-Tech
   </section>
 
 
-<!-- Qui somme Nous? -->
-<section class="bg-[#f4f6fa] flex flex-wrap md:flex-row justify-center h-auto py-48 gap-6 px-12">
-  
-  <div class="md:w-1/2 md:mb-8 max-w-xs lg:w-1/5  mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
+<!--News // Qui somme Nous? -->
+<section class="bg-[#F0F2F5] px-16 py-16 h-auto">
+  <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Nos activités / News</h2>
+  <p class="font-med mb-8 text-center">ADM une entreprise à caractère social <br> au coeur des actions</p>
+<div class="flex flex-wrap md:flex-row justify-center gap-12 "> 
+<!-- 1 -->
+  <div class="md:w-1/2 md:mb-8 max-w-xs mb-4 lg:w-1/3 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
+  <img class="w-full h-32 object-cover object-center" src="./logo/news_sabtu.jpg" alt="Image">
+  <div class="px-6 py-4">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">Mise en route pilote de l'Appli-Mobile "Sabtu"</h2>
+    <p class="text-gray-700 text-base">Lancement de la phase pilote de l'application "Sabtu" dans le marché de legume Kasouwar-dolé a Niamey</p>
+  </div>
+  <div class="px-6 py-4">
+    <button class="bg-[#F0F2F5] border border-gray-700 hover:bg-blue-700 hover:text-white text-blue-900 font-bold py-2 px-4 rounded-full">
+      voir plus
+    </button>
+  </div>
+  </div>
+<!-- 2 -->
+  <div class="md:w-1/2 md:mb-8 max-w-xs mb-4 lg:w-1/3 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/leadership.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Workshop Jeunes et Leadership</h2>
     <p class="text-gray-700 text-base">ADM initie les jeunes aux notions du leadership, et la gestion de conflits avec des cas pratique</p>
   </div>
   <div class="px-6 py-4">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+    <button class="bbg-[#F0F2F5] border border-gray-700 hover:bg-blue-700 hover:text-white text-blue-900 font-bold py-2 px-4 rounded-full">
       voir plus
     </button>
   </div>
   </div>
-
-  <div class="md:w-1/2 md:mb-8 max-w-xs lg:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
+<!-- 3 -->
+  <div class="md:w-1/2 md:mb-8 max-w-xs mb-4 lg:w-1/3 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/INDI.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Solution numérique revolutionnaire</h2>
     <p class="text-gray-700 text-base">ADM entend booster le quotidient des developeurs, avec une nouvelle technologie revolutionnaire</p>
   </div>
   <div class="px-6 py-4">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+    <button class="bg-[#F0F2F5] border border-gray-700 hover:bg-blue-700 hover:text-white text-blue-900 font-bold py-2 px-4 rounded-full">
       voir plus
     </button>
   </div>
   </div>
-
-
-  <div class="md:w-1/2 md:mb-8 max-w-xs lg:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
+<!-- 4 -->
+  <div class="md:w-1/2 md:mb-8 max-w-xs mb-4 lg:w-1/3 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/mdf.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Inclusion numérique en milieu rural</h2>
     <p class="text-gray-700 text-base">L'inclusion numerique des jeunes, un cheval de batail chez ADM, pour un acces du numerique à tous</p>
   </div>
   <div class="px-6 py-4">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+    <button class="bbg-[#F0F2F5] border border-gray-700 hover:bg-blue-700 hover:text-white text-blue-900 font-bold py-2 px-4 rounded-full">
       voir plus
     </button>
   </div>
   </div>
-
-
-  <div class="md:w-1/2 md:mb-8 max-w-xs lg:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
+<!-- 5 -->
+  <div class="md:w-1/2 md:mb-8 max-w-xs mb-4 lg:w-1/3 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/kkh.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Experience Agro-Tech</h2>
     <p class="text-gray-700 text-base">Un atelier de partage d'experiences animé par ADM autour des activité piscicoles et leurs perspectives de numerisation</p>
   </div>
   <div class="px-6 py-4">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+    <button class="bg-[#F0F2F5] border border-gray-700 hover:bg-blue-700 hover:text-white text-blue-900 font-bold py-2 px-4 rounded-full">
       voir plus
     </button>
   </div>
   </div>
-
-  <div class="md:w-1/2 md:mb-8 max-w-xs lg:w-1/5 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
+<!-- 6 -->
+  <div class="md:w-1/2 md:mb-8 max-w-xs mb-4 lg:w-1/3 mx-auto bg-white shadow-xs border border-gray-300 rounded-lg overflow-hidden">
   <img class="w-full h-32 object-cover object-center" src="./logo/ticv.jpg" alt="Image">
   <div class="px-6 py-4">
     <h2 class="text-xl font-semibold text-gray-800 mb-2">Education numerique en milieu rural </h2>
     <p class="text-gray-700 text-base"> Demistifier les outils numerique au profit des jeunes, ainsi que leur utilisation positif</p>
   </div>
   <div class="px-6 py-4">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+    <button class="bg-[#F0F2F5] border border-gray-700 hover:bg-blue-700 hover:text-white text-blue-900 font-bold py-2 px-4 rounded-full">
       voir plus
     </button>
   </div>
   </div>
+</div>
+
 </section>
   
 
